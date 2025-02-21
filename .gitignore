@@ -1,0 +1,27 @@
+# Dossier des modules Node.js
+node_modules/
+
+# Fichiers de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers d'environnement (ne pas versionner vos clés ou paramétrages privés)
+.env
+.env.*
+
+# Fichiers/dossiers générés par l'OS
+.DS_Store
+Thumbs.db
+
+# Dossier de build ou de production (à adapter selon votre configuration)
+dist/
+build/
+
+# Répertoires de déploiement Netlify (s'ils sont générés)
+.netlify/
+
+# Autres dossiers d'IDE
+.vscode/
+.idea/
