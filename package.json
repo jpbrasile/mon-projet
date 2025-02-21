@@ -2,10 +2,10 @@
   "name": "gestion-prospects-entreprises",
   "version": "1.0.0",
   "description": "Application de gestion des prospects et entreprises utilisant Supabase et Netlify",
-  "main": "client/src/App.jsx",
+  "main": "client/src/index.jsx",
   "scripts": {
-    "build": "echo \"Construire l'application...\"",
-    "start": "netlify dev"
+    "build": "react-scripts build",
+    "start": "react-scripts start"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",
@@ -13,6 +13,19 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "netlify-cli": "^18.1.0"
+    "netlify-cli": "^18.1.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
