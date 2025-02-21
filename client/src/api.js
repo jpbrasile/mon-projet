@@ -1,4 +1,8 @@
-export async function apiRequest(url, method = "GET", data = null) {
+const BASE_URL = '/.netlify/functions';
+
+export async function apiRequest(endpoint, method = "GET", data = null) {
+  // Convert /api/prospects to /.netlify/functions/prospects
+  const url = `${BASE_URL}${endpoint.replace('/api/', '/')}`;
   const options = {
     method,
     headers: { "Content-Type": "application/json" },

@@ -18,24 +18,29 @@ Le projet est organisé en deux grandes parties :
 mon-projet/
 ├── README.md
 ├── .gitignore  // Fichier pour exclure les fichiers/dossiers sensibles
-
-├── client/  
-    ├── package.json
-    ├── package-lock.json
-    ├── public/
-        ├── index.html
+├── .netlify/
+├── client/
+│   ├── public/
+│   │   └── index.html
 │   └── src/
-│       ├── App.jsx  # Composant principal React
-│       └── api.js   # Fonction utilitaire pour les appels API
-└── netlify/
-    └── functions/
-        ├── supabaseClient.js  # Initialisation du client Supabase
-        ├── prospects.js       # Endpoints pour la gestion des prospects
-        ├── entreprises.js     # Endpoints pour la gestion des entreprises
-        ├── taches.js          # Endpoints pour la gestion des tâches
-        ├── email_history.js   # Endpoints pour l'historique des emails
-        ├── call_history.js    # Endpoints pour l'historique des appels
-        └── meetings.js        # Endpoints pour l'historique des meetings
+│       ├── api.js
+│       ├── App.jsx
+│       ├── index.jsx
+│       ├── package-lock.json
+│       ├── package.json
+│       └── vite.config.js
+├── netlify/
+│   └── functions/
+│       ├── call_history.js
+│       ├── email_history.js
+│       ├── entreprises.js
+│       ├── meetings.js
+│       ├── prospects.js
+│       ├── supabaseClient.js
+│       └── taches.js
+├── node_modules/
+├── .env
+└── netlify.toml
 ```
 
 ## Mise en œuvre

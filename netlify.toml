@@ -2,3 +2,8 @@
   command = "cd client && npm run build"
   publish = "client/dist"
   functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
