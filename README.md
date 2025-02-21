@@ -18,9 +18,12 @@ Le projet est organisé en deux grandes parties :
 mon-projet/
 ├── README.md
 ├── .gitignore  // Fichier pour exclure les fichiers/dossiers sensibles
-├── package.json
-├── client/
-│   ├── index.html
+
+├── client/  
+    ├── package.json
+    ├── package-lock.json
+    ├── public/
+        ├── index.html
 │   └── src/
 │       ├── App.jsx  # Composant principal React
 │       └── api.js   # Fonction utilitaire pour les appels API
