@@ -2,10 +2,12 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  root: 'client/public',
+  root: 'public',
   plugins: [react()],
   build: {
-    outDir: '../dist', // This will create the build output in client/dist
+    // outDir is resolved relative to the root, so this places files at client/public/../dist,
+    // which simplifies to client/dist.
+    outDir: '../dist',
     emptyOutDir: true,
   }
 });
