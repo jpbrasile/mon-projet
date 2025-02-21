@@ -202,3 +202,11 @@ Astuces et notes
 Ce projet est sous licence MIT.
 
 Ce README.md fournit une vue d'ensemble complète de la réalisation et du déploiement de l'application, en intégrant l'ensemble des échanges réalisés (intégration de Supabase, déploiement sur Netlify, structuration du code et mise en ligne sur GitHub).
+
+## Modification de code 
+Commit and push your changes to GitHub:
+```bash
+git add package.json
+git commit -m "Fix: Use react-scripts for build and start"
+git push origin main
+```
